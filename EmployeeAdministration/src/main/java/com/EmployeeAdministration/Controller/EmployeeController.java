@@ -40,7 +40,7 @@ public class EmployeeController {
     public ResponseEntity<EmployeeDTO> createNew(@RequestBody EmployeeDTO e) {
         this.employeeService.save(e);
        // return ResponseEntity(employeeService.save(e));
-        return new ResponseEntity("Successfully deleted", HttpStatus.OK);
+        return new ResponseEntity("Successfully created", HttpStatus.OK);
     }
 
     // To update an Employee
